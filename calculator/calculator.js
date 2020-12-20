@@ -1,24 +1,41 @@
-function add () {
+function add (num1,num2) {
+	return num1+num2;
+}
+
+function subtract (num1,num2) {
+	return num1-num2;
 	
 }
 
-function subtract () {
+function sum (arg) {
+	var sum=0
+	for(var i=0;i<arg.length;i++){
+	 sum+=arg[i]
+	}
+	return sum;
+}
+
+function multiply (arg) {
+	var ans=1;
+	for(var i=0;i<arg.length;i++){
+	 ans*=arg[i]
+	}
+	return ans;
+	
 	
 }
 
-function sum () {
-	
+function power(num1,num2) {
+	return num1**num2;
 }
 
-function multiply () {
-	
-}
+function factorial(num) {
+	var factorial=1
 
-function power() {
-	
-}
-
-function factorial() {
+	for(var i=num;i>0;i--){
+		factorial*=i;
+	}
+return factorial
 	
 }
 
